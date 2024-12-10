@@ -1,0 +1,504 @@
+
+/* ---------------------------- General Styles ------------------------------ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: url('Texture7.PNG') no-repeat center center/cover;
+    color: #333;
+}
+
+
+/* --------------------------------- Header --------------------------------- */
+
+header {
+    background: url('Texture2.PNG') no-repeat center center/cover; 
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-direction: center;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+}
+
+header .logo img {
+    height: 80px;
+    width: auto;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+header .logo h1 {
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+header h1 {
+    font-size: 1.8rem;
+    margin: 0;
+}
+
+p {
+    font-size: 1.4rem;
+    margin: 0;
+}
+
+
+
+ h1 {
+    font-size: 1.8rem;
+    margin: 0;
+    color: Beige;
+}
+
+ h2 {
+    font-size: 1.8rem;
+    margin: 0;
+    color: #ff6347;
+}
+
+h4 {
+    font-size: 1.2rem;
+    margin: 0;
+    color: #45a049;
+    text-decoration: underline;
+}
+
+/*------------------------------ Search Box Section -------------------------*/
+
+.search-box {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.search-box input {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 200px; /* Adjust width */
+}
+
+.search-box button {
+    background-color: #ff6347; /* Tomato Red */
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-box button:hover {
+    background-color: #ff4500; /* Darker red for hover effect */
+}
+
+/* ------------------------------ Navigation Links ------------------------- */
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    background-color: #444;
+    padding: 10px;
+    justify-content: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #ff6347; /* Highlight with friendly red */
+    color: white;
+}
+
+/* ------------------------------- Main Section ----------------------------- */
+
+main {
+    padding: 2rem;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+.products {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.product-card {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    border-radius: 5px;
+    width: 200px;
+    text-align: center;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+button {
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff4500;
+}
+
+/* --------------- Style for the product buttons container------------------ */
+
+
+.card-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.5rem;
+}
+
+	/* ---------- Common style for all buttons ----------- */
+
+
+/* Add hover effect */
+.card-buttons button:hover {
+    background-color: #ff4500; /* Darker red */
+}
+
+/* Optional: Different color for "View Details" button */
+.view-details {
+    background-color: #4CAF50; /* Green */
+}
+
+.view-details:hover {
+    background-color: #45a049; /* Darker Green */
+}
+
+
+/*--------------------------- Quantity Control Buttons---------------------- */
+
+.quantity-controls {
+    display: flex;
+    gap: 0.5rem;
+    margin-left: 1rem;
+}
+
+.quantity-controls button {
+    background-color: #4caf50; /* Friendly green */
+    color: white;
+    border: none;
+    padding: 0.2rem 0.5rem;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    transition: background-color 0.3s ease;
+}
+
+.quantity-controls button.decrease {
+    background-color: #ff6347; /* Tomato red for decrease */
+}
+
+.quantity-controls button:hover {
+    background-color: #2e7d32; /* Darker green for hover */
+}
+
+.quantity-controls button.decrease:hover {
+    background-color: #ff4500; /* Darker red for hover */
+}
+
+
+/*---------------------- Fixed Cart Section at Top-Right -------------------- */
+
+.cart-fixed {
+    position: fixed;
+    top: 170px; /* Adjusted top position */
+    right: 10px; /* Adjusted right position */
+    width: 300px; /* Fixed width */
+    background-color: #ff6347;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000; /* Stays above other content */
+    overflow-y: auto; /* Scroll if items overflow */
+    max-height: 70vh; /* Limit height for larger carts */
+}
+
+/* Cart Header */
+.cart-fixed h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    text-align: center;
+    color: #333;
+}
+
+/* Cart Items List */
+#cart-items {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+#cart-items li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+}
+
+/* Quantity Controls */
+.quantity-controls {
+    display: flex;
+    gap: 5px;
+}
+
+.quantity-controls button {
+    background-color: #ff6347; /* Tomato Red */
+    color: white;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    cursor: pointer;
+}
+
+.quantity-controls button:hover {
+    background-color: #ff4500; /* Darker Red */
+}
+
+/* Cart Total */
+#cart-total {
+    font-weight: bold;
+    font-size: 1rem;
+    color: #333;
+    text-align: right;
+}
+
+/*------------------------- CSS for the Checkout Modal -------------------- */
+
+/* Modal Styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 20px; /* Position the modal closer to the top */
+    right: 10px; /* Ensure it is aligned to the right */
+    background-color: rgba(255, 255, 255, 0.95); /* Semi-transparent white background */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow for a lifted effect */
+    border-radius: 8px; /* Rounded corners */
+    z-index: 1100; /* Higher than the cart to ensure visibility */
+    padding: 20px; /* Internal padding */
+    width: 300px; /* Fixed width */
+    max-height: 80vh; /* Ensure the modal does not exceed 80% of the viewport height */
+    overflow-y: auto; /* Allow scrolling if content exceeds max-height */
+}
+
+/* Content inside the modal */
+.modal-content {
+    text-align: left; /* Align text to the left */
+    font-size: 1rem; /* Readable font size */
+}
+
+/* Close button */
+.close {
+    float: right;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #dc3545; /* Red color for the close button */
+    margin-top: -10px;
+}
+
+/*-------------- Make sure the cart-summary is positioned correctly---------- */
+
+#cart-summary {
+    position: fixed;
+    top: 100px; /* Space from the top of the page */
+    right: 21px; /* Aligned to the right side */
+    background-color: rgba(255, 255, 255, 0.95); /* Semi-transparent white background */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for lifted effect */
+    padding: 10px;
+    border-radius: 8px;
+    z-index: 1000; /* Less than the modal to ensure modal shows above it */
+    width: 280px; /* Fixed width */
+}
+
+/* Ensure checkout button is styled properly */
+#checkout-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745; /* Green background */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+#checkout-button:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+/*----------------- Add/Remove from Cart Notification Sound ----------------- */
+
+
+#notification {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background: #444;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    display: none;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: fade-in-out 2s;
+}
+
+@keyframes fade-in-out {
+    0% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    10%, 90% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+}
+
+
+/* ----------------------------- HERO SECTION ------------------------------*/
+
+/* Hero Section */
+.hero {
+    position: relative;
+    height: 100vh;
+    background: url('Texture7.PNG') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+}
+
+.hero-content {
+    background: url('Texture6.PNG')no-repeat center center/cover;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.hero-content .btn-cta {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background: #ff5722;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.hero-content .btn-cta:hover {
+    background-color: #e64a19;
+}
+
+
+}
+
+/* Other Sections */
+main {
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Responsiveness */
+@media (max-width: 600px) {
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .hero-content p {
+        font-size: 1.2rem;
+    }
+}
+
+
+/* ---------------------------- Footer Section ---------------------------- */
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: url('Texture2.PNG') no-repeat center center/cover; 
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1rem;
+}
